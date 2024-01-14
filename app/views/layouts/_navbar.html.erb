@@ -1,0 +1,19 @@
+<header class="mb-5">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <%= link_to root_path do %>
+        <span class="navbar-brand">Web Report</span>
+      <% end %>
+
+      <% if user_signed_in? %>
+        <p>Welcome, <%= current_user.email %>!</p>
+        <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "btn btn-outline-warning" %>
+      <% else %>
+        <div>
+            <%= link_to 'Log In', new_user_session_path, class: "btn btn-success" %>
+            <%= link_to 'Sign Up', new_user_registration_path,  class: "btn btn-primary" %>
+        </div>
+      <% end %>
+    </div>
+  </nav>
+</header>
