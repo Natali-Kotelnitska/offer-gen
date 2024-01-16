@@ -1,0 +1,15 @@
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <%= form_for @offer, url: offers_path, multipart: true, html: { class: 'border p-3 rounded' } do |f| %>
+        <div class="form-group">
+          <%= f.label :link, 'Enter URL:', class: 'font-weight-bold' %>
+          <%= f.text_field :link, class: 'form-control', placeholder: 'Enter URL here' %>
+        </div>
+
+        <%= f.submit 'Створити офер', class: "btn btn-primary mt-3" %>
+      <% end %>
+    </div>
+  </div>
+</div>
