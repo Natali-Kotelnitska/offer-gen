@@ -1,17 +1,17 @@
 <header class="mb-5">
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <%= link_to root_path do %>
-        <span class="navbar-brand">Web Report</span>
+    <div class="container-fluid align-items-center font-weight-bold">
+      <%= link_to root_path, class: "text-decoration-none bg-info px-3 rounded" do %>
+        <span class="navbar-brand text-white font-weight-bold font-italic">Web China Shop</span>
       <% end %>
 
       <% if user_signed_in? %>
-        <p>Welcome, <%= current_user.email %>!</p>
-        <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "btn btn-outline-warning" %>
+        <h5 class="m-0 text-warning">Welcome, <%= current_user.email %>! </h5>
+        <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "btn btn-warning" %>
       <% else %>
         <div>
             <%= link_to 'Log In', new_user_session_path, class: "btn btn-success" %>
-            <%= link_to 'Sign Up', new_user_registration_path,  class: "btn btn-primary" %>
+            <%= link_to 'Sign Up', new_user_registration_path,  class: "btn btn-info" %>
         </div>
       <% end %>
     </div>

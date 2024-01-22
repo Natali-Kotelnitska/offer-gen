@@ -8,6 +8,10 @@ gem 'rails', '~> 7.0.8'
 
 gem 'bootstrap', '~> 5.3.2'
 gem 'devise', '~> 4.9'
+gem 'dotenv-rails'
+gem 'easy_translate', '~> 0.5.1'
+gem 'httparty'
+gem 'pry'
 gem 'mechanize'
 gem 'nokogiri'
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
@@ -71,5 +75,4 @@ end
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'capybara'
-  gem 'selenium-webdriver'
 end

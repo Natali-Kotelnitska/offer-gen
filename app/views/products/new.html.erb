@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <h1 class="text-center">Форма генерації товару.</h1>
+      <%= form_with(url: products_show_path, method: "get", local: true, html: { class: 'text-center' }) do |form| %>
+        <div class="mb-3">
+          <%= form.label :url, 'Вставте посилання на товар', class: 'form-label' %>
+          <%= form.text_field :url, class: 'form-control' %>
+        </div>
+
+        <div class="actions">
+          <%= form.submit 'Згенерувати', class: 'btn btn-info text-white btn-lg btn-block' %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
