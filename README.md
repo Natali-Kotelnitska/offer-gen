@@ -1,24 +1,17 @@
 # README
+Alibaba Page Scraper
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the RoR Application with the Alibaba Page Scraper functionality. The application includes Devise user authentication, page parsing functionality for Alibaba product pages, dynamic currency conversion with Monobank integration, and language translation for improved user accessibility.
 
-Things you may want to cover:
+Features:
+User Authentication:
+Strengthened user authentication mechanisms to redirect unauthorized users to the sign-in page with an informative alert message.
 
-* Ruby version
+Page Parsing Optimization:
+Refined the page parsing logic for Alibaba product pages, ensuring a smoother and more efficient extraction of product details.
 
-* System dependencies
+Currency Conversion Enhancement:
+Implemented dynamic currency conversion using the latest exchange rates from Monobank, providing users with accurate and real-time price conversions.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Language Translation Integration:
+Introduced language translation, specifically to Ukrainian, to enhance the accessibility of data for a broader user audience.
